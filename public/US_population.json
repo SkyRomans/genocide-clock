@@ -1,0 +1,170 @@
+[
+    {
+        "year": 1850.0,
+        "total_population": 23191876.0,
+        "white_population": 19553068.0,
+        "non_white_population": 3638808.0
+    },
+    {
+        "year": 1860.0,
+        "total_population": 31443321.0,
+        "white_population": 26922537.0,
+        "non_white_population": 4520784.0
+    },
+    {
+        "year": 1870.0,
+        "total_population": 38558371.0,
+        "white_population": 33589377.0,
+        "non_white_population": 4968994.0
+    },
+    {
+        "year": 1880.0,
+        "total_population": 50155783.0,
+        "white_population": 43402970.0,
+        "non_white_population": 6752813.0
+    },
+    {
+        "year": 1890.0,
+        "total_population": 62947714.0,
+        "white_population": 55101258.0,
+        "non_white_population": 7846456.0
+    },
+    {
+        "year": 1900.0,
+        "total_population": 75994575.0,
+        "white_population": 66809196.0,
+        "non_white_population": 9185379.0
+    },
+    {
+        "year": 1910.0,
+        "total_population": 91972266.0,
+        "white_population": 81731957.0,
+        "non_white_population": 10240309.0
+    },
+    {
+        "year": 1920.0,
+        "total_population": 105710620.0,
+        "white_population": 94820915.0,
+        "non_white_population": 10889705.0
+    },
+    {
+        "year": 1930.0,
+        "total_population": 122775046.0,
+        "white_population": 110286740.0,
+        "non_white_population": 12488306.0
+    },
+    {
+        "year": 1940.0,
+        "total_population": 131669275.0,
+        "white_population": 118214870.0,
+        "non_white_population": 13454405.0
+    },
+    {
+        "year": 1950.0,
+        "total_population": 150697361.0,
+        "white_population": 134942028.0,
+        "non_white_population": 15755333.0
+    },
+    {
+        "year": 1960.0,
+        "total_population": 179323175.0,
+        "white_population": 158831732.0,
+        "non_white_population": 20491443.0
+    },
+    {
+        "year": 1970.0,
+        "total_population": 203210158.0,
+        "white_population": 178119221.0,
+        "non_white_population": 25090937.0
+    },
+    {
+        "year": 1980.0,
+        "total_population": 226545805.0,
+        "white_population": 188371622.0,
+        "non_white_population": 38174183.0
+    },
+    {
+        "year": 1990.0,
+        "total_population": 248709873.0,
+        "white_population": 199686070.0,
+        "non_white_population": 49023803.0
+    },
+    {
+        "year": 2000.0,
+        "total_population": 281421906.0,
+        "white_population": 211460626.0,
+        "non_white_population": 69961280.0
+    },
+    {
+        "year": 2010.0,
+        "total_population": 308745538.0,
+        "white_population": 223553265.0,
+        "non_white_population": 85192273.0
+    },
+    {
+        "year": 2020.0,
+        "total_population": 331449281.0,
+        "white_population": 204277273.0,
+        "non_white_population": 127172008.0
+    },
+    {
+        "year": 2022.0,
+        "total_population": 333288000.0,
+        "white_population": 196226000.0,
+        "non_white_population": 137062000.0
+    },
+    {
+        "year": 2022.0,
+        "total_population": 333288000.0,
+        "projected_white_population": 196226000.0,
+        "projected_non_white_population": 137062000.0
+    },
+    {
+        "year": 2025.0,
+        "total_population": 338016000.0,
+        "projected_white_population": 195478000.0,
+        "projected_non_white_population": 142538000.0
+    },
+    {
+        "year": 2030.0,
+        "total_population": 345074000.0,
+        "projected_white_population": 193347000.0,
+        "projected_non_white_population": 151727000.0
+    },
+    {
+        "year": 2035.0,
+        "total_population": 350861000.0,
+        "projected_white_population": 190048000.0,
+        "projected_non_white_population": 160813000.0
+    },
+    {
+        "year": 2040.0,
+        "total_population": 355309000.0,
+        "projected_white_population": 185644000.0,
+        "projected_non_white_population": 169665000.0
+    },
+    {
+        "year": 2045.0,
+        "total_population": 358438000.0,
+        "projected_white_population": 180364000.0,
+        "projected_non_white_population": 178074000.0
+    },
+    {
+        "year": 2050.0,
+        "total_population": 360639000.0,
+        "projected_white_population": 174664000.0,
+        "projected_non_white_population": 185975000.0
+    },
+    {
+        "year": 2055.0,
+        "total_population": 362450000.0,
+        "projected_white_population": 168993000.0,
+        "projected_non_white_population": 193457000.0
+    },
+    {
+        "year": 2060.0,
+        "total_population": 364287000.0,
+        "projected_white_population": 163630000.0,
+        "projected_non_white_population": 200657000.0
+    }
+]
