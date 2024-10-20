@@ -8,7 +8,7 @@ export default function Home() {
   const [populationData, setPopulationData] = useState(null);
 
   useEffect(() => {
-    fetch('/US_population.json')
+    fetch('/genocide-clock/US_population.json')
       .then(response => response.json())
       .then(data => {
         // Calculate percentage and add it to each data point
