@@ -40,3 +40,14 @@ body::before {
     text-wrap: balance;
   }
 }
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.chart-container {
+  touch-action: pan-y;
+}

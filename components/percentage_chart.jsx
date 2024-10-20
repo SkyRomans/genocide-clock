@@ -1,18 +1,47 @@
 'use client'
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine } from 'recharts';
 
 function PercentageChart({ populationData }) {
-    const currentYear = new Date().getFullYear();
+    const chartRef = useRef(null);
+
+    useEffect(() => {
+        const chartElement = chartRef.current;
+        if (chartElement) {
+            let startX;
+
+            const handleTouchStart = (e) => {
+                startX = e.touches[0].clientX;
+            };
+
+            const handleTouchMove = (e) => {
+                if (startX) {
+                    const currentX = e.touches[0].clientX;
+                    const diff = startX - currentX;
+                    if (Math.abs(diff) > 5) {
+                        e.preventDefault();
+                    }
+                }
+            };
+
+            chartElement.addEventListener('touchstart', handleTouchStart, { passive: false });
+            chartElement.addEventListener('touchmove', handleTouchMove, { passive: false });
+
+            return () => {
+                chartElement.removeEventListener('touchstart', handleTouchStart);
+                chartElement.removeEventListener('touchmove', handleTouchMove);
+            };
+        }
+    }, []);
 
     return (
-        <div className='w-full h-[400px] bg-black bg-opacity-60 rounded-xl'> {/* Fixed height */}
+        <div ref={chartRef} className='w-full h-[400px] bg-black bg-opacity-60 rounded-xl chart-container'>
             {populationData ? (
                 <ResponsiveContainer width="100%" height="100%">
                     <AreaChart
                         data={populationData}
-                        margin={{ top: 40, right: 30, left: 20, bottom: 5 }} // Increased top margin
+                        margin={{ top: 40, right: 30, left: 20, bottom: 5 }}
                         stackOffset="expand"
                     >
                         <CartesianGrid strokeDasharray="3 3" stroke="rgba(255, 255, 255, 0.2)" />
@@ -64,7 +93,7 @@ function PercentageChart({ populationData }) {
                                 fill: 'red',
                                 fontSize: 14,
                                 fontWeight: 'bold',
-                                dy: -3 // Moves the label up by 10 pixels
+                                dy: -3
                             }}
                         />
                         <ReferenceLine
@@ -77,7 +106,7 @@ function PercentageChart({ populationData }) {
                                 fill: 'green',
                                 fontSize: 14,
                                 fontWeight: 'bold',
-                                dy: -20 // Moves the label up by 10 pixels
+                                dy: -20
                             }}
                         />
                         <Area
