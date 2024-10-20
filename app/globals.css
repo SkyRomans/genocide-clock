@@ -15,7 +15,7 @@
 }
 
 body {
-  background-image: url('./swiss_mountains.png');
+  background-image: url('/swiss_mountains.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
